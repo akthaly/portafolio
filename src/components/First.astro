@@ -1,0 +1,48 @@
+---
+
+---
+
+<article class="grid grid-rows-2 gap-4">
+    <article class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 items-center ">
+        <h1 class="text-5xl sm:text-4xl md:text-6xl lg:text-8xl sm:col-span-2 md:col-span-3 lg:col-span-3 text-left transition-all duration-300 ease-in">
+            Making the websites a
+            <span class="text-color-animated">beautiful</span>
+            place.
+        </h1>
+
+        <img 
+            src="/human.svg" 
+            alt="astro-logo" 
+            class="h-20 w-20 sm:h-24 sm:w-24 md:h-auto md:w-auto sm:col-span-1 md:col-span-1 lg:col-span-1 mx-auto transition-all duration-300 ease-in"
+        />
+    </article>
+
+    <h2 class=" font-exo text-md sm:text-md md:text-2xl lg:text-3xl transition-all duration-300 ease-in flex items-center justify-center">
+        Alejandro Anona. Fullstack Developer.
+    </h2>
+</article>
+  
+
+<style>
+    @keyframes cambiaColor {
+        0% {
+            color: red;
+        }
+        25% {
+            color: blue;
+        }
+        50% {
+            color: green;
+        }
+        75% {
+            color: orange;
+        }
+        100% {
+            color: red;
+        }
+    }
+
+    .text-color-animated {
+        animation: cambiaColor 10s linear infinite;
+    }
+</style>

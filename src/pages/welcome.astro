@@ -1,0 +1,223 @@
+---
+import First from "@/components/First.astro";
+import Second from "@/components/Second.astro";
+import EyeFollowingMouse from "../components/Face.jsx";
+console.log("hola ")
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<div>
+  <section class="min-h-screen flex items-center justify-center">
+    <First />
+  </section>
+
+  <section class="text-left px-4 md:px-0">
+    <Second/>
+  </section>
+
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-10">
+    <div>
+      <h3 class="text-lg sm:text-xl md:text-2xl font-exo">
+        Technologies I work with:
+      </h3>
+      <ul class="list-disc list-inside font-exo">
+        <li class="text-sm sm:text-base md:text-lg">Astro</li>
+        <li class="text-sm sm:text-base md:text-lg">TailwindCSS</li>
+        <li class="text-sm sm:text-base md:text-lg">Vite</li>
+        <li class="text-sm sm:text-base md:text-lg">React</li>
+        <li class="text-sm sm:text-base md:text-lg">JavaScript</li>
+        <li class="text-sm sm:text-base md:text-lg">NodeJS</li>
+        <li class="text-sm sm:text-base md:text-lg">HTML5</li>
+        <li class="text-sm sm:text-base md:text-lg">Python</li>
+        <li class="text-sm sm:text-base md:text-lg">Django</li>
+        <li class="text-sm sm:text-base md:text-lg">Flask</li>
+        <li class="text-sm sm:text-base md:text-lg">Fortran 90</li>
+        <li class="text-sm sm:text-base md:text-lg">Java</li>
+        <li class="text-sm sm:text-base md:text-lg">C++</li>
+        <li class="text-sm sm:text-base md:text-lg">Visual Studio Code</li>
+        <li class="text-sm sm:text-base md:text-lg">GitHub</li>
+        <li class="text-sm sm:text-base md:text-lg">GitLab</li>
+        <li class="text-sm sm:text-base md:text-lg">Microsoft Office</li>
+      </ul>
+    </div>
+
+    <div class="col-span-1 sm:col-span-2 lg:col-span-3">
+      <a> </a>
+    </div>
+  </section>
+
+  <section class="mt-8">
+    <h3 class="text-lg sm:text-xl md:text-3xl lg:text-4xl font-exo">
+      I work with:
+    </h3>
+    <picture class="flex flex-wrap justify-center gap-4 p-2">
+      <a href="https://astro.build/" target="_blank" rel="noopener noreferrer">
+        <img
+          src="/astro-icon-light-gradient.svg"
+          alt="astro-logo"
+          class="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
+        />
+      </a>
+      <a
+        href="https://tailwindcss.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/tailwind.svg"
+          alt="tailwind-logo"
+          class="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
+        />
+      </a>
+      <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">
+        <img
+          src="/vite.svg"
+          alt="vite-logo"
+          class="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
+        />
+      </a>
+      <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
+        <img
+          src="/react-logo.svg"
+          alt="react-logo"
+          class="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
+        />
+      </a>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/javascript-logo.svg"
+          alt="javascript-logo"
+          class="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
+        />
+      </a>
+      <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+        <img
+          src="/nodejs-logo.svg"
+          alt="nodejs-logo"
+          class="h-20 sm:h-24 md:h-32"
+        />
+      </a>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/html-5-logo.svg"
+          alt="html5-logo"
+          class="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
+        />
+      </a>
+    </picture>
+
+    <picture class="flex flex-wrap justify-center gap-4 p-2">
+      <a
+        href="https://www.python.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/python-logo.svg"
+          alt="python-logo"
+          class="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
+        />
+      </a>
+      <a
+        href="https://www.djangoproject.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/django-logo.svg"
+          alt="django-logo"
+          class="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
+        />
+      </a>
+      <a
+        href="https://flask.palletsprojects.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/flask-logo.svg"
+          alt="flask-logo"
+          class="h-20 sm:h-24 md:h-32"
+        />
+      </a>
+      <a
+        href="https://fortran-lang.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/fortran90.svg"
+          alt="fortran90-logo"
+          class="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
+        />
+      </a>
+      <a href="https://www.java.com/" target="_blank" rel="noopener noreferrer">
+        <img
+          src="/java-logo.svg"
+          alt="java-logo"
+          class="h-20 sm:h-24 md:h-32"
+        />
+      </a>
+      <a href="https://isocpp.org/" target="_blank" rel="noopener noreferrer">
+        <img src="/cpp-logo.svg" alt="cpp-logo" class="h-20 sm:h-24 md:h-32" />
+      </a>
+    </picture>
+
+    <picture class="flex flex-wrap justify-center gap-4 p-2">
+      <a
+        href="https://code.visualstudio.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/vs-code-logo.svg"
+          alt="vscode-logo"
+          class="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
+        />
+      </a>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <img
+          src="/github-mark.svg"
+          alt="git-logo"
+          class="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
+        />
+      </a>
+      <a
+        href="https://about.gitlab.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/gitlab-logo.svg" alt="git-logo" class="h-24 sm:h-32" />
+      </a>
+      <a
+        href="https://www.office.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/office-logo.svg"
+          alt="office-logo"
+          class="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32"
+        />
+      </a>
+    </picture>
+  </section>
+</div>
+
+<style>
+  .text-color-red {
+    background-image: linear-gradient(0deg, #872341 0%, #6a1e95 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+</style>

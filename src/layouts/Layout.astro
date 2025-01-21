@@ -1,22 +1,48 @@
+---
+import NavBar from "../components/NavBar.jsx";
+interface Props {
+	title: string; // typescript
+}
+
+const { title } = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<div class="relative h-screen p-2 gap-2">
+				<NavBar client:load/>
+				<!-- Aquí se llama al componente NavBar y se le pasa la propiedad client:load para que se ejecute en el cliente -->
+			<section class="container mx-auto px-16">
+				<slot />
+			</section>
+		</div>
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
+<style is:global>
+	html {
+		font-family: "EuropaGrotesk", sans-serif;
+		font-size: 15px;
+		font-style: normal;
+		background-color: #000000;
+		background-size: 224px;
+		color-scheme: dark light;
+	}
+
+	@font-face {
+		font-family: "EuropaGrotesk";
+		src: url("/src/fonts/EuropaGroteskSH-MedEx.otf") format("opentype");
+		font-weight: 200; /* Cambia según el peso: normal, bold, etc. */
+		font-style: normal; /* Cambia según el estilo: normal, italic, etc. */
+		font-display: swap;
 	}
 </style>
