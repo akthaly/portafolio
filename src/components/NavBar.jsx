@@ -5,7 +5,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
-    { name: "About me", href: "/" },
+    { name: "About me", href: "#about-me" },
     { name: "Proyects", href: "/about" },
     { name: "Contact", href: "/projects" },
   ];

@@ -1,18 +1,75 @@
 ---
 
 ---
-<div class="flex flex-col items-center px-4">
-    <h1 class="text-center font-europagrotesk text-xl sm:text-3xl md:text-5xl lg:text-7xl mb-10">
-        About me.
-    </h1>
-    <a class="font-exo text-md sm:text-md md:text-xl lg:text-2xl 
-         transition-all duration-500 text-purple-700 max-w-xl mb-8">
-            Hi there :D, I'm Alejandro Anona, a Fullstack Developer passionate about creating functional and beatiful web applications. 
-            
-            
-    </a>
-    <a class="font-exo text-md sm:text-md md:text-xl lg:text-2xl 
-        transition-all duration-500 text-purple-700  max-w-xl">
-        With experience in technologies like React, Astro, Node.js, Django, JavaScript, among others. I'm always looking for new challenges and opportunities to grow as a professional.
-    </a>
+
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-10">
+    <div class="bg-slate-800 p-3">
+      <h3 class="text-lg sm:text-xl md:text-2xl font-exo">
+        Technologies I work with:
+      </h3>
+      <ul class="list-disc list-inside font-exo">
+        <li class="text-sm sm:text-base md:text-lg">Astro</li>
+        <li class="text-sm sm:text-base md:text-lg">TailwindCSS</li>
+        <li class="text-sm sm:text-base md:text-lg">Vite</li>
+        <li class="text-sm sm:text-base md:text-lg">React</li>
+        <li class="text-sm sm:text-base md:text-lg">JavaScript</li>
+        <li class="text-sm sm:text-base md:text-lg">NodeJS</li>
+        <li class="text-sm sm:text-base md:text-lg">HTML5</li>
+        <li class="text-sm sm:text-base md:text-lg">Python</li>
+        <li class="text-sm sm:text-base md:text-lg">Django</li>
+        <li class="text-sm sm:text-base md:text-lg">Flask</li>
+        <li class="text-sm sm:text-base md:text-lg">Fortran 90</li>
+        <li class="text-sm sm:text-base md:text-lg">Java</li>
+        <li class="text-sm sm:text-base md:text-lg">C++</li>
+        <li class="text-sm sm:text-base md:text-lg">Visual Studio Code</li>
+        <li class="text-sm sm:text-base md:text-lg">GitHub</li>
+        <li class="text-sm sm:text-base md:text-lg">GitLab</li>
+        <li class="text-sm sm:text-base md:text-lg">Microsoft Office</li>
+      </ul>
+    </div>
+
+    <div class="col-span-1 sm:col-span-2 lg:col-span-3 flex flex-col items-center px-4 bg-slate-800 p-3">
+        <h1 class="absolute text-center font-europagrotesk text-xl sm:text-3xl md:text-5xl lg:text-7xl mt-10 top-0 left-1/2 transform -translate-x-1/2 z-10">
+            About me.
+        </h1>
+        <a class="font-exo text-md sm:text-md md:text-xl lg:text-2xl 
+             transition-all duration-500 text-purple-700 max-w-3xl mb-8">
+                Hi there :D, I'm Alejandro Anona, a Fullstack Developer passionate about creating functional and beatiful web applications. 
+                
+                
+        </a>
+        <a class="font-exo text-md sm:text-md md:text-xl lg:text-2xl 
+            transition-all duration-500 text-purple-700  max-w-3xl">
+            With experience in technologies like 
+            <span class="react-color">
+                React,
+            </span> 
+            <span class="text-white">
+                Astro,
+            </span>
+            <span class="node-color">
+                Node.js,
+            </span>
+            <span class="django-color">
+                Django,
+            </span>  JavaScript, among others. I'm always looking for new challenges and opportunities to grow as a professional.
+        </a>
+    </div>
+  </section>
+
+
+<div class="">
+    
 </div>
+
+<style>
+    .react-color{
+        color: #58C4DC;
+    }
+    .node-color{
+        color: #53A144;
+    }
+    .django-color{
+        color: #0C4B33;
+    }
+</style>
