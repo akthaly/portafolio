@@ -11,7 +11,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className=" bg-transparent text-slate-200 font-dosis text-2xl">
+    <nav className="bg-black text-slate-200 font-dosis text-2xl fixed top-0 w-full z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <a href="/" className="text-4xl hover:text-purple-500 transition-all duration-500 font-semibold">
@@ -54,7 +54,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-red-800 text-slate-500 overflow-hidden ease-in-out transition-all duration-700  ${
+        className={`md:hidden text-slate-500 overflow-hidden ease-in-out transition-all duration-700  ${
           menuOpen ? "max-h-screen " : "max-h-0"
         }`}
       >
